@@ -17,7 +17,7 @@ import {projects, TAGS} from '../translations/es.astro';
             <div class="flex flex-wrap mt-2 text-pretty">{description}</div>
             <ul class='flex flex-wrap gap-2 mt-4 justify-center'>
                 {tags.map((tag) => (
-                    <li key={tag.name}> 
+                    <li> 
                         <span class={`flex pr-4 gap-x-1 bg-gray-800 rounded-full text-xs ${tag.class} items-center py-0 px-2`}>
                             <tag.icon class="ml-0 size-8" />
                             {tag.name}
