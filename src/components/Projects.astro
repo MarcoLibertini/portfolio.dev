@@ -13,8 +13,8 @@ import {projects, TAGS} from '../translations/es.astro';
             </div>
         </div>
         <div class="flex flex-col w-full md:max-w-lg">
-            <h3 class="text-2xl font-bold text-yellow-200 dark:text-gray-100">{title}</h3>
-            <div class="flex flex-wrap mt-2 text-pretty">{description}</div>
+            <h3 class="text-2xl font-bold text-black/80 dark:text-yellow-200/90">{title}</h3>
+            <div class="mt-2 text-gray-700 dark:text-gray-400 text-pretty">{description}</div>
             <ul class='flex flex-wrap gap-2 mt-4 justify-center'>
                 {tags.map((tag) => (
                     <li> 
@@ -25,9 +25,11 @@ import {projects, TAGS} from '../translations/es.astro';
                     </li>
                 ))}
             </ul>
-            <div class="flex justify-center mt-2">
-                <a class={`flex pr-4 gap-x-1 bg-gray-800 rounded-full text-xs items-center py-0 px-2 mr-2`} href={url}>Ver proyecto</a>
-                <a class={`flex pr-4 gap-x-1 bg-gray-800 rounded-full text-xs items-center py-0 px-2`} href={github}>Ver código</a>
+            <div class="flex justify-center mt-4 ">
+                
+                
+                <a class={`flex  bg-gray-700 rounded-full text-xs items-center py-2 px-2 mr-2 text-center hover:shadow-glow`} href={url}>Ver proyecto</a>
+                <a class={`flex  bg-gray-700 rounded-full text-xs items-center py-0 px-2 mr-2 text-center hover:shadow-glow`} href={github}>Ver código</a>
             </div>
         </div>
     </article>

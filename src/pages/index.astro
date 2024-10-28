@@ -12,7 +12,8 @@ import Malentin from "../Icons/Malentin.astro";
 import CodeIcon from "../Icons/CodeIcon.astro";
 import Projects from "../components/Projects.astro";
 import SobreMi from "../components/sobreMi.astro";
-import sobreMiIcon from "../Icons/sobreMiIcon.astro";
+import sobreMicon from "../Icons/sobreMiIcon.astro";
+
 ---
 
 <Layout title="Portfolio de Marco - Developer."
@@ -27,52 +28,62 @@ description="Marco Libertini, desarrollador full stack de Bahía Blanca, Buenos 
         />
         <Badge>Disponible para contratar</Badge>
       </div>
-      <h1 class="text-2xl font-bold flex flex-row lg:text-5xl pb-3 lg:pb-5 gap-x-4 text-white text-left mt-4">
-        ¡Hola! Soy Marco.
+      
+      <!-- Título en negro para modo claro -->
+      <h1 class="text-2xl font-bold flex flex-row lg:text-5xl pb-3 lg:pb-5 gap-x-4 text-black dark:text-white text-left mt-4">
+        ¡Hey! Soy Marco.
       </h1>
       
-      <h2 class="text-lg lg:text-2xl text-white/80 text-wrapmax-w-[700px]">
-        <span class="text-yellow-200/90">Desarrollador Full Stack</span>
-        <span class="opacity-80">de Bahía Blanca, Buenos Aires, Argentina.</span>
-        <span class="text-yellow-200/90">+30 Años de experiencia</span>
+      <!-- Texto principal con amarillo y negro para modo claro -->
+      <h2 class="text-lg lg:text-2xl font-semibold text-black dark:text-white/80 text-wrap max-w-[700px]">
+        <span class="text-yellow-500 font-bold dark:text-yellow-200/90">Desarrollador Full Stack</span>
+        <span class="text-black font-semibold dark:text-white opacity-80">de Bahía Blanca, Buenos Aires, Argentina.</span>
+        <span class="text-yellow-500 font-bold dark:text-yellow-200/90">+30 Años de experiencia</span>
         resolviendo problemas los cuales yo mismo creo.
       </h2>
 
+      <!-- Redes sociales con texto negro en modo claro -->
       <nav class="flex mt-4 flex-wrap justify-center items-center gap-3 py-4">
-		<SocialPill href="https://github.com/marcolibertini">
-            <GitHub class="size-4 " />
-            GitHub
-          </SocialPill>
-          <SocialPill href="https://www.linkedin.com/in/marcolibertini/">
-            <Linkedin class="size-4" />
-            LinkedIn
-          </SocialPill>
-		  <SocialPill href="mailto:marco@marcolibertini.com">
-			<MailIcon class="size-4" />
-			mglibertini@gmail.com
-		  </SocialPill>
-	  </nav>
-	  <SectionConteiner id="experiencia">
-		<h2 class="flex items-center text-2xl text-white/80 text-wrap mb-6 mt-5 font-semibold">
-			<Malentin class="size-8 mr-2" />
-			Experiencia Laboral
-		</h2>
-		<Experience />
+        <SocialPill href="https://github.com/marcolibertini">
+          <GitHub class="size-4 text-black dark:text-white " />
+          <span class="text-black/80 dark:text-white">GitHub</span>
+        </SocialPill>
+        <SocialPill href="https://www.linkedin.com/in/marcolibertini/">
+          <Linkedin class="size-4 text-black dark:text-white" />
+          <span class="text-black dark:text-white">LinkedIn</span>
+        </SocialPill>
+        <SocialPill href="mailto:marco@marcolibertini.com">
+          <MailIcon class="size-4 text-black dark:text-white" />
+          <span class="text-black dark:text-white">mglibertini@gmail.com</span>
+        </SocialPill>
+      </nav>
 
-		<SectionConteiner id="proyectos">
-			<h2 class="flex items-center text-2xl gap-x-3 text-white/80 text-wrap mb-6 mt-5 font-semibold">
-				<CodeIcon class="size-8 " />
-				Proyectos
-			</h2>
-			<Projects />
-		</SectionConteiner>
-	  
-    <SectionConteiner id="Sobre-mi">
-			<h2 class="flex items-center text-2xl gap-x-3 text-white/80 text-wrap mb-6 mt-5 font-semibold">
-				<sobreMiIcon class="size-8 " />
-				Sobre mi
-			</h2>
-			<SobreMi />
-		</SectionConteiner>
+      <!-- Sección Experiencia Laboral -->
+      <SectionConteiner id="experiencia">
+        <h2 class="flex items-center text-2xl text-black/80 dark:text-yellow-200/90 text-wrap mb-6 mt-5 font-semibold">
+          <Malentin class="size-8 mr-2" />
+          Experiencia Laboral
+        </h2>
+        <Experience />
+      </SectionConteiner>
+
+      <!-- Sección Proyectos -->
+      <SectionConteiner id="proyectos">
+        <h2 class="flex items-center text-2xl gap-x-3 text-black/80 dark:text-yellow-200/90 text-wrap mb-6 mt-5 font-semibold">
+          <CodeIcon class="size-8 " />
+          Proyectos
+        </h2>
+        <Projects />
+      </SectionConteiner>
+
+      <!-- Sección Sobre Mí -->
+      <SectionConteiner id="Sobre-mi">
+        <h2 class="flex items-center text-2xl gap-x-3 text-black/80 dark:text-yellow-200/90 text-wrap mb-6 mt-5 font-semibold">
+          <sobreMicon class="size-8 mr-2" />
+          Sobre mi
+        </h2>
+        <SobreMi />
+      </SectionConteiner>
+    </SectionConteiner>
   </main>
 </Layout>
