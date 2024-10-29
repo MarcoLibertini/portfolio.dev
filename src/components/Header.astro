@@ -24,7 +24,7 @@ import Darki from "../Icons/Darkmode.astro";
   const htmlElement = document.documentElement;
 
   // Función para establecer el tema
-  function setTheme(theme) {
+  function setTheme(theme:string) {
     htmlElement.classList.remove('light', 'dark'); // Elimina cualquier clase anterior
     htmlElement.classList.add(theme);               // Agrega la nueva clase
     localStorage.setItem('theme', theme);           // Guarda la preferencia en localStorage
