@@ -12,7 +12,8 @@ import Malentin from "../Icons/Malentin.astro";
 import CodeIcon from "../Icons/CodeIcon.astro";
 import Projects from "../components/Projects.astro";
 import SobreMi from "../components/sobreMi.astro";
-import sobreMicon from "../Icons/sobreMiIcon.astro";
+import { Code } from "astro:components";
+//import sobreMicon from "../Icons/sobreMiIcon.astro";
 
 ---
 
@@ -79,7 +80,7 @@ description="Marco Libertini, desarrollador full stack de Bahía Blanca, Buenos 
       <!-- Sección Sobre Mí -->
       <SectionConteiner id="Sobre-mi">
         <h2 class="flex items-center text-2xl gap-x-3 text-black/80 dark:text-yellow-200/90 text-wrap mb-6 mt-5 font-semibold">
-          <sobreMicon class="size-8 mr-2" />
+          <CodeIcon class="size-8 mr-2" />
           Sobre mi
         </h2>
         <SobreMi />
