@@ -13,6 +13,8 @@ import CodeIcon from "../Icons/CodeIcon.astro";
 import Projects from "../components/Projects.astro";
 import SobreMi from "../components/sobreMi.astro";
 import { Code } from "astro:components";
+import { Image } from 'astro:assets';
+import profileImage from '../projects/profileImage.webp'
 //import sobreMicon from "../Icons/sobreMiIcon.astro";
 
 ---
@@ -22,10 +24,13 @@ description="Marco Libertini, desarrollador full stack de Bahía Blanca, Buenos 
   <main class="px-4">
     <SectionConteiner id="top" class="py-44 pb-24">
       <div class="flex items-center">
-        <img
+        <Image
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYe8EVbuOE0B-MQ9rpgRHIns6SEEiZYRsh0Q&s"
           alt="Marco"
-          class="w-20 h-20 rounded-full mr-4"
+          width={80}
+          height={80}
+          class="rounded-full mr-4"
+          loading="eager"
         />
         <Badge>Disponible para trabajar</Badge>
       </div>
