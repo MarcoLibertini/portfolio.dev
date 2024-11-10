@@ -1,102 +1,107 @@
 ---
-import Python from '../Icons/Python.astro';
-import Tailwind from '../Icons/Tailwind.astro';
-import JavaScript from '../Icons/Javascript.astro';
-import React from '../Icons/React.astro';
-import MongoDB from '../Icons/MongoDB.astro';
-import Colab from '../Icons/Colab.astro';
-import Pandas from '../Icons/Pandas.astro';
-import ScikitLearn from '../Icons/ScikitLearn.astro';
-import CSharp from '../Icons/CSharp.astro';
-import Flask from '../Icons/Flask.astro';
-import CSS from '../Icons/CSS.astro';
-import MySQL from '../Icons/MySqL.astro';
-import HTML from '../Icons/HTML.astro';
-import FastAPI from '../Icons/FastApi.astro';
+import Python from "../Icons/Python.astro";
+import Tailwind from "../Icons/Tailwind.astro";
+import JavaScript from "../Icons/Javascript.astro";
+import React from "../Icons/React.astro";
+import MongoDB from "../Icons/MongoDB.astro";
+import Colab from "../Icons/Colab.astro";
+import Pandas from "../Icons/Pandas.astro";
+import ScikitLearn from "../Icons/ScikitLearn.astro";
+import CSharp from "../Icons/CSharp.astro";
+import Flask from "../Icons/Flask.astro";
+import CSS from "../Icons/CSS.astro";
+import MySQL from "../Icons/MySqL.astro";
+import HTML from "../Icons/HTML.astro";
+import FastAPI from "../Icons/FastApi.astro";
 
 export const TAGS = {
-    PYTHON: {
-        name: 'Python',
-        class: "bg-gray-800 text-white",
-        icon: Python
-    },
-    TAILWIND: {
-        name: 'Tailwind',
-        class: "bg-gray-800 text-white",
-        icon: Tailwind
-    },
-    JAVASCRIPT: {
-        name: 'JavaScript',
-        class: "bg-gray-800 text-white",
-        icon: JavaScript
-    },
-    REACT: {
-        name: 'React',
-        class: "bg-gray-800 text-white",
-        icon: React
-    },
-    MONGODB: {
-        name: 'MongoDB',
-        class: "bg-gray-800 text-white",
-        icon: MongoDB
-    },
-    COLAB: {
-        name: 'Colab',
-        class: "bg-gray-800 text-white",
-        icon: Colab
-    },
-    PANDAS: {
-        name: 'Pandas',
-        class: "bg-gray-800 text-white",
-        icon: Pandas
-    },
-    SCIKITLEARN: {
-        name: 'Scikit Learn',
-        class: "bg-gray-800 text-white",
-        icon: ScikitLearn
-    },
-    CSS: {
-        name: 'CSS',
-        class: "bg-gray-800 text-white",
-        icon: CSS
-    },
-    FLASK: {
-        name: 'Flask',
-        class: "bg-gray-800 text-white",
-        icon: Flask
-    },
-    FASTAPI: {
-        name: 'FastAPI',
-        class: "bg-gray-800 text-white",
-        icon: FastAPI
-    },
-    HTML: {
-        name: 'HTML',
-        class: "bg-gray-800 text-white",
-        icon: HTML
-    },
-    MYSQL: {
-        name: 'MySQL',
-        class: "bg-gray-800 text-white",
-        icon: MySQL
-    },
-    CSHARP: {
-        name: 'C#',
-        class: "bg-gray-800 text-white",
-        icon: CSharp
-    },
-    
-}
+  PYTHON: {
+    name: "Python",
+    class: "bg-gray-800 text-white",
+    icon: Python,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-gray-800 text-white",
+    icon: Tailwind,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-gray-800 text-white",
+    icon: JavaScript,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-gray-800 text-white",
+    icon: React,
+  },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-gray-800 text-white",
+    icon: MongoDB,
+  },
+  COLAB: {
+    name: "Colab",
+    class: "bg-gray-800 text-white",
+    icon: Colab,
+  },
+  PANDAS: {
+    name: "Pandas",
+    class: "bg-gray-800 text-white",
+    icon: Pandas,
+  },
+  SCIKITLEARN: {
+    name: "Scikit Learn",
+    class: "bg-gray-800 text-white",
+    icon: ScikitLearn,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-gray-800 text-white",
+    icon: CSS,
+  },
+  FLASK: {
+    name: "Flask",
+    class: "bg-gray-800 text-white",
+    icon: Flask,
+  },
+  FASTAPI: {
+    name: "FastAPI",
+    class: "bg-gray-800 text-white",
+    icon: FastAPI,
+  },
+  HTML: {
+    name: "HTML",
+    class: "bg-gray-800 text-white",
+    icon: HTML,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-gray-800 text-white",
+    icon: MySQL,
+  },
+  CSHARP: {
+    name: "C#",
+    class: "bg-gray-800 text-white",
+    icon: CSharp,
+  },
+};
 
 export const projects = [
   {
-    title: "BeerInvaders",
+    title: "ToDo - TaskManager",
     description:
-      "Un proyecto en Python utilizando la librería pyGame que es una imitación del clásico juego Space Invaders, reinventado como Beer Invaders. En este juego, un alienígena dispara cerveza a los amigos.",
-    url: "#",
-    github: "enlace/a/tu/codigo2",
-    image: "/projects/beerInva.webp",
-    tags: [TAGS.PYTHON],
+      "Aplicación de gestión de tareas desarrollada con el stack FARM (FastAPI, React, MongoDB). El backend desplegado en Render. La interfaz de creada con React, se aloja en Netlify. La base de datos se gestiona en MongoDB Atlas.",
+    url: "https://doitmarqo.netlify.app/",
+    github: "https://github.com/MarcoLibertini/TaskManager",
+    image: "/projects/tasks.webp",
+    tags: [
+      
+      TAGS.FASTAPI,
+      TAGS.REACT,
+      TAGS.MONGODB,
+
+    ],
   },
   {
     title: "Generador de Fotos Carnet ",
@@ -107,64 +112,8 @@ export const projects = [
     image: "/projects/fotos4x4.webp",
     tags: [TAGS.PYTHON],
   },
- 
   {
-    title: "Sistema Tesla/SpaceX",
-    description:
-      "Un proyecto en C# construido con Windows Forms que controla registros, bajas y modificaciones de vehículos Tesla y SpaceX. También realiza verificaciones en los vehículos.",
-    url: "enlace/a/tu/proyecto3",
-    github: "https://github.com/MarcoLibertini/TeslaSpaceXSystem",
-    image: "/projects/teslaWhite.webp",
-    tags: [TAGS.CSHARP],
-  },
-  {
-    title: "Zonas de Peligro",
-    description:
-      "Este proyecto utiliza un conjunto de datos de crímenes en los Estados Unidos para crear un modelo de Kmeans. El modelo categoriza las áreas en niveles de peligro bajo, medio y alto, y las mapea con colores característicos.",
-    url: "enlace/a/tu/proyecto4",
-    github: "https://github.com/MarcoLibertini/Danger-Zone-Classifier",
-    image: "/projects/zonasWhite.webp",
-    tags: [TAGS.PYTHON, TAGS.SCIKITLEARN,TAGS.PANDAS, TAGS.COLAB],
-  },
-  {
-    title: "Recomendador de Cerveza",
-    description:
-      "Utilizando análisis de datos en un conjunto de información sobre cervezas, este proyecto crea un modelo de machine learning. El modelo recomienda cervezas según las preferencias del usuario, con un método interactivo para modificar las preferencias.",
-    url: "enlace/a/tu/proyecto5",
-    github: "https://github.com/MarcoLibertini/Beer-Recommendation-System",
-    image: "/projects/clasificadorCervezas.webp",
-    tags: [TAGS.PYTHON, TAGS.SCIKITLEARN, TAGS.PANDAS, TAGS.COLAB],
-  },
-  
-  {
-    title: "MagicFun",
-    description:
-      "Un proyecto básico para gestionar tipos de hongos utilizando Flask, SQL y JavaScript, implicando la creación de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar).",
-    url: "enlace/a/tu/proyecto7",
-    github: "enlace/a/tu/codigo7",
-    image: "/projects/hongosWhite.webp",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.FLASK, TAGS.MYSQL, TAGS.PYTHON],
-  },
-  {
-    title: "Clasificador de Spotify",
-    description:
-      "Clasificador de temas de Spotify, evaluando si a un usuario le podría gustar una canción según sus características, utilizando análisis de datos y un modelo de machine learning.",
-    url: "enlace/a/tu/proyecto8",
-    github: "https://github.com/MarcoLibertini/Spotify-categorizer",
-    image: "/projects/spotify.webp",
-    tags: [TAGS.PYTHON, TAGS.SCIKITLEARN, TAGS.PANDAS, TAGS.COLAB],
-  },
-  {
-    title: "KnowYou",
-    description:
-      "Proyecto en Python sobre reconocimiento facial, adaptado para funcionar con una cámara de ordenador en movimiento. Utiliza la biblioteca face_recognition y un banco de imágenes para el reconocimiento.",
-    url: "https://github.com/MarcoLibertini/KnowYou/tree/master",
-    github: "https://github.com/MarcoLibertini/KnowYou/tree/master",
-    image: "/imgs/knowYou.jpg",
-    tags: [TAGS.PYTHON],
-  },
-  {
-    title: "Generador de Frases de Bukowski",
+    title: "Bukowski-Quote-Generator",
     description:
       "Utilizando técnicas de scraping con BeautifulSoup, compilé una lista de citas de Charles Bukowski. Esta aplicación de React obtiene una cita aleatoria de esta lista con cada interacción del usuario.",
     url: "https://bukowski-quote-generator.vercel.app/",
@@ -173,13 +122,86 @@ export const projects = [
     tags: [TAGS.REACT, TAGS.PYTHON, TAGS.TAILWIND],
   },
   {
-    title: "Panel de Control",
+    title: "BeerInvaders",
     description:
-      "Proyecto final Full Stack: una aplicación de página única (SPA) desarrollada como el proyecto final de un curso Full Stack. Este proyecto implica la creación de un sistema de gestión integral de usuarios, clientes, stock, compras, ventas, productos y servicios.",
-    url: "enlace/a/tu/proyecto6",
-    github: "enlace/a/tu/codigo6",
-    image: "/imgs/dashboard.jpg",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.FLASK, TAGS.PYTHON, TAGS.MYSQL],
-  }
+      "Un proyecto en Python utilizando la librería pyGame que es una imitación del clásico juego Space Invaders, reinventado como Beer Invaders. En este juego, un alienígena dispara cerveza a los amigos.",
+    url: "#",
+    github: "#",
+    image: "/projects/beerInva.webp",
+    tags: [TAGS.PYTHON],
+  },
+
+
+  {
+    title: "Sistema Tesla/SpaceX",
+    description:
+      "Un proyecto en C# construido con Windows Forms que controla registros, altas, bajas y modificaciones de vehículos Tesla y SpaceX. Contiene filtros, caracteristicas y simula una serie de verificaciones en los vehículos.",
+    url: "#",
+    github: "https://github.com/MarcoLibertini/TeslaSpaceXSystem",
+    image: "/projects/teslaWhite.webp",
+    tags: [TAGS.CSHARP],
+  },
+  {
+    title: "Zonas de Peligro",
+    description:
+      "Este proyecto utiliza un conjunto de datos de crímenes en los Estados Unidos para crear un modelo de Kmeans. El modelo categoriza las áreas en niveles de peligro bajo, medio y alto, y las mapea con colores característicos.",
+    url: "#",
+    github: "https://github.com/MarcoLibertini/Danger-Zone-Classifier",
+    image: "/projects/zonasWhite.webp",
+    tags: [TAGS.PYTHON, TAGS.SCIKITLEARN, TAGS.PANDAS, TAGS.COLAB],
+  },
+  {
+    title: "Recomendador de Cerveza",
+    description:
+      "Utilizando análisis de datos sobre cervezas, este proyecto crea un modelo de machine learning que recomienda cervezas según las preferencias del usuario, con un método interactivo para modificar las preferencias.",
+    url: "#",
+    github: "https://github.com/MarcoLibertini/Beer-Recommendation-System",
+    image: "/projects/clasificadorCervezas.webp",
+    tags: [TAGS.PYTHON, TAGS.SCIKITLEARN, TAGS.PANDAS, TAGS.COLAB],
+  },
+  {
+    title: "Clasificador de Spotify",
+    description:
+      "Clasificador de temas de Spotify, evaluando si a un usuario le podría gustar una canción según sus características, utilizando análisis de datos y un modelo de machine learning.",
+    url: "#",
+    github: "https://github.com/MarcoLibertini/Spotify-categorizer",
+    image: "/projects/spotify.webp",
+    tags: [TAGS.PYTHON, TAGS.SCIKITLEARN, TAGS.PANDAS, TAGS.COLAB],
+  },
+  {
+    title: "Mi Primer Portfolio",
+    description:
+      "Primer prototipo de portfolio personal utilizando React y CSS.",
+    url: "https://mgl-tau.vercel.app/",
+    github: "https://github.com/MarcoLibertini/myPortfolio",
+    image: "/projects/ports.webp",
+    tags: [TAGS.PYTHON],
+  },
+  {
+    title: "MycoCRUD",
+    description:
+      "Proyecto básico para gestionar tipos de hongos utilizando Flask, SQL y JavaScript, implicando la creación de una aplicación CRUD (Crear, Leer, Actualizar, Eliminar).",
+    url: "#",
+    github: "https://github.com/MarcoLibertini/MycoCRUD",
+    image: "/projects/hongosWhite.webp",
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JAVASCRIPT,
+      TAGS.FLASK,
+      TAGS.MYSQL,
+      TAGS.PYTHON,
+    ],
+  },
+  {
+    title: "KnowYou",
+    description:
+      "Proyecto en Python sobre reconocimiento facial, adaptado para funcionar con una cámara de ordenador en movimiento. Utiliza la biblioteca face_recognition y un banco de imágenes para el reconocimiento.",
+    url: "#",
+    github: "https://github.com/MarcoLibertini/KnowYou/tree/master",
+    image: "/imgs/knowYou.jpg",
+    tags: [TAGS.PYTHON],
+  },
+
 ];
 ---
